@@ -1,0 +1,12 @@
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\bin\Debug\net8.0\GestionDocumentos.Core.deps.json
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\bin\Debug\net8.0\GestionDocumentos.Core.dll
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\bin\Debug\net8.0\GestionDocumentos.Core.pdb
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.csproj.AssemblyReference.cache
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.AssemblyInfoInputs.cache
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.AssemblyInfo.cs
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.csproj.CoreCompileInputs.cache
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.dll
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\refint\GestionDocumentos.Core.dll
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.pdb
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\ref\GestionDocumentos.Core.dll
