@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionDocumentos.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+206ec187d6a0b3410903df75bb89155f1b6c930d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionDocumentos.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionDocumentos.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

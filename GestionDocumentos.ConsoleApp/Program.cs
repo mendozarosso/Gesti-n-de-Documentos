@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace DocumentManagementSystem
@@ -13,48 +12,98 @@ namespace DocumentManagementSystem
             
             while (true)
             {
-                Console.WriteLine("Bienvenido a RDOC, La solucion Efectiva para el manejo de documentos");
-                Console.WriteLine("Elige Una de estas opciones : ");
-                Console.WriteLine("\n1. Agregar documento");
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("==================================================");
+                Console.WriteLine("  Bienvenido a rDOC - Gestión Efectiva de Documentos");
+                Console.WriteLine("==================================================");
+                Console.ResetColor();
+                Console.WriteLine("\nElija una de estas opciones:");
+                Console.WriteLine("1. Agregar documento");
                 Console.WriteLine("2. Listar documentos");
                 Console.WriteLine("3. Buscar documento");
                 Console.WriteLine("4. Eliminar documento");
                 Console.WriteLine("5. Salir");
-                Console.Write("Seleccione una opción: ");
+                Console.Write("\nSeleccione una opción: ");
 
                 string option = Console.ReadLine();
-                Console.WriteLine("Bienvenido a RDOC, La solucion Efectiva para el manejo de documentos");
-                Console.WriteLine("Elige Una de estas opciones : ");
 
                 switch (option)
                 {
                     case "1":
-                        Console.Write("Ingrese el nombre del documento: ");
-                        string name = Console.ReadLine();
-                        Console.Write("Ingrese el contenido del documento: ");
-                        string content = Console.ReadLine();
-                        manager.AddDocument(new Document(name, content));
+                        AddDocumentUI(manager);
                         break;
                     case "2":
-                        manager.ListDocuments();
+                        ListDocumentsUI(manager);
                         break;
                     case "3":
-                        Console.Write("Ingrese el término de búsqueda: ");
-                        string searchTerm = Console.ReadLine();
-                        manager.SearchDocuments(searchTerm);
+                        SearchDocumentsUI(manager);
                         break;
                     case "4":
-                        Console.Write("Ingrese el nombre del documento a eliminar: ");
-                        string docToDelete = Console.ReadLine();
-                        manager.DeleteDocument(docToDelete);
+                        DeleteDocumentUI(manager);
                         break;
                     case "5":
+                        Console.WriteLine("\n¡Gracias por usar rDOC! Hasta pronto.");
                         return;
                     default:
-                        Console.WriteLine("Opción no válida.");
+                        Console.WriteLine("\nOpción no válida. Presione cualquier tecla para continuar...");
+                        Console.ReadKey();
                         break;
                 }
             }
+        }
+
+        static void AddDocumentUI(DocumentManager manager)
+        {
+            Console.Clear();
+            Console.WriteLine("=== Agregar Nuevo Documento ===\n");
+            
+            Console.Write("Ingrese el nombre del documento: ");
+            string name = Console.ReadLine();
+            
+            Console.WriteLine("\nIngrese el contenido del documento (presione Enter dos veces para finalizar):");
+            string content = "";
+            string line;
+            while ((line = Console.ReadLine()) != "")
+            {
+                content += line + "\n";
+            }
+
+            manager.AddDocument(new Document(name, content));
+            
+            Console.WriteLine("\nDocumento agregado exitosamente. Presione cualquier tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        static void ListDocumentsUI(DocumentManager manager)
+        {
+            Console.Clear();
+            Console.WriteLine("=== Lista de Documentos ===\n");
+            manager.ListDocuments();
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        static void SearchDocumentsUI(DocumentManager manager)
+        {
+            Console.Clear();
+            Console.WriteLine("=== Buscar Documentos ===\n");
+            Console.Write("Ingrese el término de búsqueda: ");
+            string searchTerm = Console.ReadLine();
+            manager.SearchDocuments(searchTerm);
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        static void DeleteDocumentUI(DocumentManager manager)
+        {
+            Console.Clear();
+            Console.WriteLine("=== Eliminar Documento ===\n");
+            Console.Write("Ingrese el nombre del documento a eliminar: ");
+            string docToDelete = Console.ReadLine();
+            manager.DeleteDocument(docToDelete);
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
         }
     }
 
@@ -92,7 +141,9 @@ namespace DocumentManagementSystem
 
             foreach (var doc in documents)
             {
-                Console.WriteLine($"Nombre: {doc.Name}, Fecha de creación: {doc.CreationDate}");
+                Console.WriteLine($"Nombre: {doc.Name}");
+                Console.WriteLine($"Fecha de creación: {doc.CreationDate}");
+                Console.WriteLine(new string('-', 30));
             }
         }
 
@@ -108,7 +159,9 @@ namespace DocumentManagementSystem
 
             foreach (var doc in results)
             {
-                Console.WriteLine($"Nombre: {doc.Name}, Fecha de creación: {doc.CreationDate}");
+                Console.WriteLine($"Nombre: {doc.Name}");
+                Console.WriteLine($"Fecha de creación: {doc.CreationDate}");
+                Console.WriteLine(new string('-', 30));
             }
         }
 

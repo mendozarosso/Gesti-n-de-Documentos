@@ -10,3 +10,4 @@ C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\De
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\refint\GestionDocumentos.Core.dll
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.pdb
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\ref\GestionDocumentos.Core.dll
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.Core\obj\Debug\net8.0\GestionDocumentos.Core.sourcelink.json

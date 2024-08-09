@@ -121,3 +121,4 @@ C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.ConsoleApp\
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.ConsoleApp\obj\Debug\net8.0\GestionDocumentos.ConsoleApp.pdb
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.ConsoleApp\obj\Debug\net8.0\GestionDocumentos.ConsoleApp.genruntimeconfig.cache
 C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.ConsoleApp\obj\Debug\net8.0\ref\GestionDocumentos.ConsoleApp.dll
+C:\Users\jason\programacion\Gestión de Documentos\GestionDocumentos.ConsoleApp\obj\Debug\net8.0\GestionDocumentos.ConsoleApp.sourcelink.json
